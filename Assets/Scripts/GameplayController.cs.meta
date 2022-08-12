@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b095ca9dee55be94ba0e85a9b70752d8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fruit_PickUp: {fileID: 8530284193304027549, guid: fc093893240b47646a5b91d7dec73aba, type: 3}
+  - bomb_PickUp: {fileID: 1064168603512228994, guid: 38ca239878445b342bd754c5834b4123, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

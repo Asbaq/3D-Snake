@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
             create_Node_At_Tail = false;
 
             GameObject newNode = Instantiate(tailPrefab,nodes[nodes.Count - 1].position,Quaternion.identity);
-
+            newNode.tag = "Tail";
             newNode.transform.SetParent(transform, true);
             nodes.Add(newNode.GetComponent<Rigidbody>());
         }
@@ -176,7 +176,7 @@ public class PlayerController : MonoBehaviour
             AudioManager.instance.Play_pickUp_Sound();
         }
 
-        if(target.tag == Tags.WALL || target.tag == Tags.BOMB)
+        if(target.tag == Tags.WALL || target.tag == Tags.BOMB || target.tag == Tags.TAIL )
         {
             Time.timeScale = 1f;
             SceneManager.LoadScene("GameOver");
